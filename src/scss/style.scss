@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+$main_background: #6F6C75;
+$text_gray: #6F6C75;
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    color: white;
+    background-color: $main_background;
+}
+
+.navigation {
+    display: flex; 
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+}
+
+.navigation__link {
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navigation__link:visited {
+    color: white;
+}
+
+.navigation__link:hover {
+    color: black;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/welcome.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100vw;
+}
+
+.header__heading {
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.header__subHeading {
+    margin-top: 0.4em;
+    font-size: 1.5rem;
+    color: $text_gray;
+}
+
+.plot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+    color: black;
+    
+}
+
+.plot__heading {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.plot__imgAndDesContainer {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    margin: 0.5rem 4rem 0.5rem 4rem;
+}
+
+.imgAndDesContainer__img {
+    width: 200px;
+    height: 300px;
+}
+
+.imgAndDesContainer__paragraph {
+    padding: 10px 20px 30px;
+}
